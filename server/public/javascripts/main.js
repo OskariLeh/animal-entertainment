@@ -1,5 +1,5 @@
-const greenButton = document.getElementById("green")
-const redButton = document.getElementById("red")
+let greenButton = document.getElementById("green")
+let redButton = document.getElementById("red")
 
 greenButton.addEventListener("click", () => {
     console.log("GREEN CLICKED")
