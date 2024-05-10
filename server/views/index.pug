@@ -1,7 +1,8 @@
 extends layout
 
 block content
-  h1= title
-  img(src="http://192.168.1.134/stream.mjpg") 
-  button(class="green") GREEN
-  button(class="red") RED 
+  img(src="stream.mjpg") 
+  button(id="green") GREEN
+  button(id="red") RED 
+
+script(src="/javascripts/main.js") 
