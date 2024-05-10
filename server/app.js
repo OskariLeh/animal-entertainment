@@ -8,7 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
-const videoStream = require('raspberrypi-node-camera-web-streamer');
+const videoStream = require('./videoStream');
 videoStream.acceptConnections(app, {
     width: 1280,
     height: 720,
