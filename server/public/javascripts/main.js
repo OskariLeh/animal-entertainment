@@ -1,10 +1,26 @@
-let greenButton = document.getElementById("green")
-let redButton = document.getElementById("red")
+let rightButton = document.getElementById("right")
+let leftButton = document.getElementById("left")
+let feedButton = document.getElementById("feed")
 
-greenButton.addEventListener("click", () => {
-    console.log("GREEN CLICKED")
+
+
+feedButton.addEventListener("click", () => {
+    console.log("Feeding")
+    fetch("/feed").then( res =>
+        console.log(res.status)
+    )
 })
 
-redButton.addEventListener("click", () => {
-    console.log("RED CLICKED")
+rightButton.addEventListener("click", () => {
+    console.log("Moving right")
+    fetch("/right").then( res =>
+        console.log(res.status)
+    )
+})
+
+leftButton.addEventListener("click", () => {
+    console.log("Moving left")
+    fetch("/left").then( res =>
+        console.log(res.status)
+    )
 })
