@@ -1,3 +1,5 @@
+// This code is from the example project of raspberrypi_node_camera_web_streamer made by caseymcj
+
 let lastFrameObj = {
     lastFrame: null
 };
